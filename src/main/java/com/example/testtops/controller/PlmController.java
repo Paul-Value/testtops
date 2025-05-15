@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/plmData")
 public class PlmController {
     @Autowired
     private PlmService plmService;
 
-    @GetMapping("/plmData")
+    @GetMapping
     public ResponseEntity<List<PlmNode>> getPlmData() {
         List<PlmNode> result = plmService.buildHierarchy();
         return ResponseEntity.ok(result);

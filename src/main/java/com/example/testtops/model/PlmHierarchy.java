@@ -30,7 +30,7 @@ public class PlmHierarchy {
     private Integer clientViewId;
 
     @Column(name = "s_deleted")
-    private Boolean deleted;
+    private Integer deleted;
 
     @Column(name = "s_state")
     private Integer state;
