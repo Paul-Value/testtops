@@ -86,6 +86,6 @@ public class Classes {
     @Column(name = "objectformat")
     private String objectFormat;
 
-    @Column(name = "supportmultiatachment")
+    @Column(name = "supportmultiattachment")
     private Boolean supportMultiAttachment;
 }

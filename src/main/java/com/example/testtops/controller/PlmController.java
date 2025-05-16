@@ -18,7 +18,7 @@ public class PlmController {
 
     @GetMapping
     public ResponseEntity<List<PlmNode>> getPlmData() {
-        List<PlmNode> result = plmService.buildHierarchy();
+        List<PlmNode> result = plmService.getHierarchy();
         return ResponseEntity.ok(result);
     }
 }
