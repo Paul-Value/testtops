@@ -1,12 +1,14 @@
 package com.example.testtops.model.dto;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import java.util.ArrayList;
 import java.util.List;
 
 @Getter
 @Setter
+@NoArgsConstructor
 public class PlmNode {
     private Long objectId;
     private String name;
